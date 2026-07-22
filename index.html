@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Suraksha Shield | Live Scam Detection</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <!-- ==========================================
+         HEADER
+    =========================================== -->
+
+    <header class="header">
+
+        <div class="brand">
+
+            <div class="logo">
+                🛡️
+            </div>
+
+            <div>
+                <h1>Suraksha Shield</h1>
+
+                <p>
+                    AI-Powered Digital Scam Protection
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="system-status">
+
+            <span class="status-dot"></span>
+
+            System Ready
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ==========================================
+         MAIN CONTENT
+    =========================================== -->
+
+    <main class="container">
+
+
+        <!-- HERO -->
+
+        <section class="hero">
+
+            <div>
+
+                <span class="badge">
+                    REAL-TIME PROTECTION
+                </span>
+
+
+                <h2>
+                    Detect digital arrest scams
+                    while the call is happening.
+                </h2>
+
+
+                <p>
+                    Suraksha Shield listens to the conversation,
+                    analyzes suspicious patterns and uses AI to
+                    identify potential scams in real time.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==========================================
+             PROTECTION CONTROLS
+        =========================================== -->
+
+        <section class="control-card">
+
+
+            <div class="control-information">
+
+                <h2>
+                    Live Call Protection
+                </h2>
+
+
+                <p>
+                    Start protection before or during a suspicious
+                    conversation. Allow microphone access when your
+                    browser asks for permission.
+                </p>
+
+            </div>
+
+
+
+            <div class="button-container">
+
+                <button
+                    id="startProtection"
+                    class="primary-button"
+                >
+                    🎙 Start Protection
+                </button>
+
+
+                <button
+                    id="stopProtection"
+                    class="secondary-button"
+                    disabled
+                >
+                    Stop Protection
+                </button>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ==========================================
+             CURRENT STATUS
+        =========================================== -->
+
+        <section class="status-card">
+
+
+            <div class="status-icon">
+                🛡️
+            </div>
+
+
+            <div>
+
+                <p class="status-label">
+                    CURRENT STATUS
+                </p>
+
+
+                <h2 id="riskStatus">
+                    Protection not started
+                </h2>
+
+
+                <p id="confidence">
+                    Start protection to begin monitoring.
+                </p>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ==========================================
+             DASHBOARD
+        =========================================== -->
+
+        <div class="dashboard-grid">
+
+
+            <!-- LIVE TRANSCRIPT -->
+
+            <section class="dashboard-card">
+
+
+                <div class="card-header">
+
+                    <div>
+
+                        <p class="card-label">
+                            LIVE MONITOR
+                        </p>
+
+                        <h2>
+                            Call Transcript
+                        </h2>
+
+                    </div>
+
+
+                    <span
+                        id="listeningIndicator"
+                        class="listening-indicator"
+                    >
+                        ● Offline
+                    </span>
+
+                </div>
+
+
+
+                <div
+                    id="liveTranscript"
+                    class="transcript-box"
+                >
+
+                    <p class="placeholder-text">
+
+                        Your live call transcript will appear
+                        here after you start protection.
+
+                    </p>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- RISK ASSESSMENT -->
+
+            <section class="dashboard-card">
+
+
+                <div class="card-header">
+
+                    <div>
+
+                        <p class="card-label">
+                            THREAT ANALYSIS
+                        </p>
+
+                        <h2>
+                            Risk Assessment
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="risk-score-container">
+
+
+                    <div
+                        id="riskScore"
+                        class="risk-score"
+                    >
+                        0
+                    </div>
+
+
+                    <div>
+
+                        <p>
+                            Rules Engine Score
+                        </p>
+
+
+                        <span id="categoryCount">
+                            0 categories detected
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="risk-meter">
+
+                    <div
+                        id="riskMeterFill"
+                        class="risk-meter-fill"
+                    ></div>
+
+                </div>
+
+
+
+                <p id="analysisMessage">
+
+                    No conversation analyzed yet.
+
+                </p>
+
+
+            </section>
+
+
+        </div>
+
+
+
+        <!-- ==========================================
+             RED FLAGS
+        =========================================== -->
+
+        <section class="dashboard-card full-width-card">
+
+
+            <div class="card-header">
+
+                <div>
+
+                    <p class="card-label">
+                        DETECTION ENGINE
+                    </p>
+
+                    <h2>
+                        Detected Red Flags
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+
+            <ul
+                id="redFlags"
+                class="information-list"
+            >
+
+                <li>
+                    No suspicious signals detected yet.
+                </li>
+
+            </ul>
+
+
+        </section>
+
+
+
+        <!-- ==========================================
+             ACTION STEPS
+        =========================================== -->
+
+        <section class="dashboard-card full-width-card">
+
+
+            <div class="card-header">
+
+                <div>
+
+                    <p class="card-label">
+                        SAFETY GUIDANCE
+                    </p>
+
+                    <h2>
+                        Recommended Actions
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+
+            <ul
+                id="actionSteps"
+                class="information-list"
+            >
+
+                <li>
+                    Start protection to receive real-time
+                    safety recommendations.
+                </li>
+
+            </ul>
+
+
+        </section>
+
+
+
+        <!-- ==========================================
+             EMERGENCY HELP
+        =========================================== -->
+
+        <section class="emergency-card">
+
+
+            <div>
+
+                <p class="emergency-label">
+
+                    MONEY ALREADY TRANSFERRED?
+
+                </p>
+
+
+                <h2>
+
+                    Act immediately during the golden hour.
+
+                </h2>
+
+
+                <p>
+
+                    Contact India's National Cyber Crime
+                    Helpline immediately if you have
+                    transferred money to a suspected scammer.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="emergency-number">
+
+                <span>
+                    Cyber Fraud Helpline
+                </span>
+
+                <strong>
+                    1930
+                </strong>
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ==========================================
+         FOOTER
+    =========================================== -->
+
+    <footer>
+
+        <p>
+            Suraksha Shield • AI for Digital Public Safety
+        </p>
+
+        <p>
+            Hackathon Prototype
+        </p>
+
+    </footer>
+
+
+
+    <!-- ==========================================
+         REAL-TIME SCAM ALERT
+    =========================================== -->
+
+    <div
+        id="scamAlertOverlay"
+        class="scam-alert-overlay"
+    >
+
+
+        <div class="scam-alert-modal">
+
+
+            <div class="alert-icon">
+                !
+            </div>
+
+
+            <p class="alert-label">
+
+                HIGH-RISK ACTIVITY DETECTED
+
+            </p>
+
+
+            <h2 id="alertTitle">
+
+                Possible Scam Detected
+
+            </h2>
+
+
+            <p id="alertMessage">
+
+                Suspicious patterns have been detected
+                in this conversation.
+
+            </p>
+
+
+
+            <div
+                id="alertReasons"
+                class="alert-reasons"
+            >
+            </div>
+
+
+
+            <div class="alert-warning">
+
+                Do not transfer money, share OTPs,
+                passwords, UPI PINs, or banking information.
+
+            </div>
+
+
+
+            <div class="alert-buttons">
+
+
+                <button
+                    id="closeAlert"
+                    class="alert-secondary-button"
+                >
+
+                    Continue Monitoring
+
+                </button>
+
+
+
+                <button
+                    id="stopCallAlert"
+                    class="alert-danger-button"
+                >
+
+                    Stop Protection
+
+                </button>
+
+
+            </div>
+
+
+
+            <p class="alert-help">
+
+                Already transferred money?
+
+                Contact the cyber fraud helpline:
+
+                <strong>
+                    1930
+                </strong>
+
+            </p>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
