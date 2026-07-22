@@ -86,12 +86,8 @@ const alertReasons =
     document.getElementById("alertReasons");
 
 
-closeAlert.addEventListener("click", function () {
-    scamAlertOverlay.classList.remove("show");
-
-    // Allow another alert if new threats are detected
-    alertAlreadyShown = false;
-});
+const closeAlert =
+    document.getElementById("closeAlert");
 
 
 const stopCallAlert =
@@ -383,6 +379,10 @@ closeAlert.addEventListener(
             .classList
 
             .remove("show");
+
+
+        // Allow another alert if new threats are detected
+        alertAlreadyShown = false;
 
 
     }

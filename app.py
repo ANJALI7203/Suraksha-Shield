@@ -22,7 +22,7 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Fine for local hackathon development
+    allow_origins=["*"],  # Hackathon/local dev only — restrict to your real frontend origin(s) before deploying publicly
     allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],

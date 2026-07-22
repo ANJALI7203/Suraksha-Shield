@@ -15,7 +15,7 @@ API_KEY = os.getenv(
 
 MODEL = os.getenv(
     "ANTHROPIC_MODEL",
-    "claude-sonnet-4-20250514"
+    "claude-sonnet-5"
 )
 
 
