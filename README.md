@@ -11,17 +11,15 @@ Real-time AI-powered scam / "digital arrest" call detection. A rules engine scan
 
 ```
 suraksha-shield/
-├── backend/
-│   ├── app.py                # FastAPI app and routes
-│   ├── rules_engine.py       # Keyword/pattern-based scam signal detection
-│   ├── llm_classifier.py     # Claude-based contextual classification
-│   ├── session_manager.py    # In-memory session + call-transcript state
-│   ├── requirements.txt
-│   └── .env.example
-└── frontend/
-    ├── index.html
-    ├── script.js
-    └── style.css
+├── app.py                # FastAPI app and routes
+├── rules_engine.py       # Keyword/pattern-based scam signal detection
+├── llm_classifier.py     # Claude-based contextual classification
+├── session_manager.py    # In-memory session + call-transcript state
+├── requirements.txt
+├── .env.example
+├── index.html
+├── script.js
+└── style.css
 ```
 
 ## Prerequisites
